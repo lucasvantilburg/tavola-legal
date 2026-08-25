@@ -1,0 +1,341 @@
+<title>Tavola Terms of Use</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #FDFCFA;
+    --surface: #FFFFFF;
+    --text: #1A1714;
+    --text2: #5C5550;
+    --text3: #9A908A;
+    --accent: #2A4A35;
+    --border: #E5DED8;
+    --mark-bg: #F0EDE8;
+    --warn-bg: #FDF6EE;
+    --warn-border: #E8C99A;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131110;
+      --surface: #1E1A18;
+      --text: #F0EBE5;
+      --text2: #A89F99;
+      --text3: #6B635E;
+      --accent: #5A8A6A;
+      --border: #2C2724;
+      --mark-bg: #231F1D;
+      --warn-bg: #261F16;
+      --warn-border: #6B4F28;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #131110;
+    --surface: #1E1A18;
+    --text: #F0EBE5;
+    --text2: #A89F99;
+    --text3: #6B635E;
+    --accent: #5A8A6A;
+    --border: #2C2724;
+    --mark-bg: #231F1D;
+    --warn-bg: #261F16;
+    --warn-border: #6B4F28;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.72;
+    padding: 48px 24px 96px;
+  }
+
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .app-name {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: clamp(26px, 5vw, 34px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 12px;
+  }
+
+  .meta {
+    font-size: 13.5px;
+    color: var(--text3);
+  }
+
+  .toc {
+    background: var(--mark-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 26px;
+    margin-bottom: 48px;
+  }
+
+  .toc-title {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 12px;
+  }
+
+  .toc ol {
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .toc a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 14px;
+  }
+
+  .toc a:hover { text-decoration: underline; }
+
+  section { margin-bottom: 44px; }
+
+  h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text);
+    margin-top: 22px;
+    margin-bottom: 8px;
+    letter-spacing: 0.02em;
+  }
+
+  p { margin-bottom: 12px; color: var(--text2); }
+  p:last-child { margin-bottom: 0; }
+
+  ul, ol {
+    padding-left: 20px;
+    margin-bottom: 12px;
+    color: var(--text2);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  li { line-height: 1.65; }
+
+  /* Subscription callout box — Apple requires auto-renewal disclosure to be prominent */
+  .callout {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin: 16px 0;
+  }
+
+  .callout-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text3);
+    margin-bottom: 8px;
+  }
+
+  .callout p { font-size: 14.5px; }
+
+  .contact-box {
+    background: var(--mark-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 22px 26px;
+  }
+
+  .contact-box p { margin-bottom: 6px; }
+
+  a { color: var(--accent); }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    font-size: 13px;
+    color: var(--text3);
+    text-align: center;
+  }
+</style>
+
+<div class="wrap">
+  <header class="header">
+    <p class="app-name">Tavola</p>
+    <h1>Terms of Use</h1>
+    <p class="meta">Effective date: 25 August 2026 &nbsp;·&nbsp; Operator: Lucas van Tilburg (ABN 17 403 743 343)</p>
+  </header>
+
+  <nav class="toc" aria-label="Contents">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#acceptance">Acceptance of terms</a></li>
+      <li><a href="#service">The service</a></li>
+      <li><a href="#accounts">Accounts</a></li>
+      <li><a href="#subscriptions">Subscriptions and billing</a></li>
+      <li><a href="#conduct">Acceptable use</a></li>
+      <li><a href="#ip">Intellectual property</a></li>
+      <li><a href="#content">Your content</a></li>
+      <li><a href="#disclaimer">Disclaimer of warranties</a></li>
+      <li><a href="#liability">Limitation of liability</a></li>
+      <li><a href="#termination">Termination</a></li>
+      <li><a href="#governing">Governing law</a></li>
+      <li><a href="#changes">Changes to these terms</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="acceptance">
+    <h2>1. Acceptance of terms</h2>
+    <p>By downloading, installing, or using the Tavola mobile application ("the App"), you agree to be bound by these Terms of Use ("Terms"). If you do not agree, do not use the App.</p>
+    <p>These Terms form a legally binding agreement between you and Lucas van Tilburg (ABN 17 403 743 343), operating as Tavola, based in New South Wales, Australia ("we", "us", or "our").</p>
+  </section>
+
+  <section id="service">
+    <h2>2. The service</h2>
+    <p>Tavola is a family meal planning application that helps households discover recipes, plan weekly dinners, and coordinate meals based on family preferences. We reserve the right to modify, suspend, or discontinue features of the service at any time, with or without notice.</p>
+    <p>The App requires a compatible iOS device and an active internet connection for full functionality.</p>
+  </section>
+
+  <section id="accounts">
+    <h2>3. Accounts</h2>
+    <p>You must create an account to use Tavola. You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account. Notify us immediately if you suspect unauthorised access.</p>
+    <p>You must be at least 18 years old to create an account. By creating an account, you represent that you meet this requirement.</p>
+    <p>One account may represent a household (family group). You are responsible for all use of the App by members of your household.</p>
+  </section>
+
+  <section id="subscriptions">
+    <h2>4. Subscriptions and billing</h2>
+
+    <h3>Free and Pro tiers</h3>
+    <p>Tavola offers a free tier with core functionality, and Tavola Pro, a paid subscription that unlocks additional features including automated meal planning.</p>
+
+    <div class="callout">
+      <p class="callout-label">Subscription auto-renewal disclosure</p>
+      <p>Tavola Pro is offered as an auto-renewing subscription. Your subscription will automatically renew at the end of each billing period unless you cancel at least 24 hours before the renewal date. Your Apple ID will be charged at the rate shown at the time of purchase. You can manage or cancel your subscription at any time through your iPhone Settings → Apple ID → Subscriptions.</p>
+    </div>
+
+    <h3>Pricing</h3>
+    <p>Subscription pricing is displayed in the App before purchase. Prices are shown in your local currency as determined by your App Store region and may include applicable taxes. We may change pricing with reasonable advance notice.</p>
+
+    <h3>Payment processing</h3>
+    <p>All payments are processed by Apple through the App Store. We do not collect or store your payment card details. Your purchase is subject to Apple's payment terms in addition to these Terms.</p>
+
+    <h3>Refunds</h3>
+    <p>Refund requests must be made directly to Apple in accordance with their refund policy. We do not process refunds independently. To request a refund from Apple, visit <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p>
+
+    <h3>Cancellation</h3>
+    <p>You may cancel your subscription at any time. Cancellation takes effect at the end of the current billing period — you will retain access to Pro features until then. No partial refunds are provided for unused portions of a billing period.</p>
+  </section>
+
+  <section id="conduct">
+    <h2>5. Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the App for any unlawful purpose or in a way that violates any applicable law or regulation.</li>
+      <li>Attempt to reverse engineer, decompile, or extract the source code of the App.</li>
+      <li>Use automated means to access or scrape the App or its underlying services.</li>
+      <li>Attempt to gain unauthorised access to any part of the App or its infrastructure.</li>
+      <li>Misrepresent your identity or impersonate any person.</li>
+      <li>Interfere with the proper functioning of the App or its servers.</li>
+    </ul>
+  </section>
+
+  <section id="ip">
+    <h2>6. Intellectual property</h2>
+    <p>All content, design, code, trademarks, and materials in the App are owned by or licensed to Lucas van Tilburg and are protected by Australian and international intellectual property laws.</p>
+    <p>These Terms do not transfer any intellectual property rights to you. You are granted a limited, non-exclusive, non-transferable licence to use the App for personal, non-commercial household use only.</p>
+    <p>Recipe content displayed in the App may be sourced from third parties. We do not claim ownership of third-party recipe content.</p>
+  </section>
+
+  <section id="content">
+    <h2>7. Your content</h2>
+    <p>You retain ownership of any content you submit or enter into the App (such as meal notes or family information). By submitting content, you grant us a limited licence to store and process it solely for the purpose of providing the service to you.</p>
+    <p>You are responsible for ensuring that any content you submit does not infringe the rights of any third party.</p>
+  </section>
+
+  <section id="disclaimer">
+    <h2>8. Disclaimer of warranties</h2>
+    <p>The App is provided "as is" and "as available" without warranties of any kind, either express or implied. To the maximum extent permitted by Australian law, we disclaim all implied warranties, including those of merchantability, fitness for a particular purpose, and non-infringement.</p>
+    <p>We do not warrant that the App will be uninterrupted, error-free, or free of viruses or harmful components. Meal planning suggestions are algorithmically generated and are not a substitute for professional dietary or nutritional advice.</p>
+    <p>Nothing in these Terms limits any rights you may have under the <em>Australian Consumer Law</em> (Schedule 2 of the <em>Competition and Consumer Act 2010</em> (Cth)), including any applicable consumer guarantees.</p>
+  </section>
+
+  <section id="liability">
+    <h2>9. Limitation of liability</h2>
+    <p>To the maximum extent permitted by law, our total liability to you for any claim arising out of or in connection with the App is limited to the amount you paid for your subscription in the 12 months preceding the claim.</p>
+    <p>We are not liable for any indirect, incidental, special, consequential, or punitive damages, including loss of data or profits, arising from your use of the App.</p>
+    <p>These limitations do not apply to liability that cannot be excluded under Australian Consumer Law or other applicable legislation.</p>
+  </section>
+
+  <section id="termination">
+    <h2>10. Termination</h2>
+    <p>We may suspend or terminate your account if you breach these Terms, engage in fraudulent activity, or if we discontinue the service. You may delete your account at any time through the App settings or by contacting us.</p>
+    <p>Upon termination, your right to use the App ceases immediately. Provisions of these Terms that by their nature should survive termination will remain in effect.</p>
+  </section>
+
+  <section id="governing">
+    <h2>11. Governing law</h2>
+    <p>These Terms are governed by the laws of New South Wales, Australia. You submit to the non-exclusive jurisdiction of the courts of New South Wales for any dispute arising under these Terms.</p>
+    <p>If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.</p>
+  </section>
+
+  <section id="changes">
+    <h2>12. Changes to these terms</h2>
+    <p>We may update these Terms from time to time. When we do, we will revise the effective date at the top of this page. Material changes will be notified via the App or by email. Continued use of the App after changes are posted constitutes your acceptance of the updated Terms.</p>
+  </section>
+
+  <section id="contact">
+    <h2>13. Contact us</h2>
+    <div class="contact-box">
+      <p><strong>Lucas van Tilburg</strong><br>ABN 17 403 743 343<br>New South Wales, Australia</p>
+      <p>Email: <a href="mailto:familyeatsapp@gmail.com">familyeatsapp@gmail.com</a></p>
+      <p style="font-size:13.5px; color: var(--text3); margin-top: 10px;">We aim to respond to all enquiries within 5 business days.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Lucas van Tilburg (ABN 17 403 743 343) · Tavola</p>
+  </footer>
+</div>
