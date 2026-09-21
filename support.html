@@ -1,0 +1,179 @@
+<title>Tavola Support</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root {
+    --bg: #FDFCFA;
+    --surface: #FFFFFF;
+    --text: #1A1714;
+    --text2: #5C5550;
+    --text3: #9A908A;
+    --accent: #2A4A35;
+    --border: #E5DED8;
+    --mark-bg: #F0EDE8;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131110;
+      --surface: #1E1A18;
+      --text: #F0EBE5;
+      --text2: #A89F99;
+      --text3: #6B635E;
+      --accent: #5A8A6A;
+      --border: #2C2724;
+      --mark-bg: #231F1D;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --bg: #131110;
+    --surface: #1E1A18;
+    --text: #F0EBE5;
+    --text2: #A89F99;
+    --text3: #6B635E;
+    --accent: #5A8A6A;
+    --border: #2C2724;
+    --mark-bg: #231F1D;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15.5px;
+    line-height: 1.72;
+    padding: 48px 24px 96px;
+  }
+
+  .wrap { max-width: 680px; margin: 0 auto; }
+
+  .header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .app-name {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+  }
+
+  h1 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: clamp(26px, 5vw, 34px);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text);
+    text-wrap: balance;
+    margin-bottom: 12px;
+  }
+
+  .meta { font-size: 13.5px; color: var(--text3); }
+
+  section { margin-bottom: 44px; }
+
+  h2 {
+    font-family: 'Libre Baskerville', Georgia, serif;
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 14px;
+    padding-left: 14px;
+    border-left: 3px solid var(--accent);
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+
+  p { color: var(--text2); margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  .contact-card {
+    background: var(--mark-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-top: 8px;
+  }
+
+  .contact-card p { margin-bottom: 6px; }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  .faq { display: flex; flex-direction: column; gap: 20px; }
+
+  .faq-item {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px 22px;
+  }
+
+  .faq-q {
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  .faq-a { color: var(--text2); font-size: 14.5px; margin: 0; }
+</style>
+
+<div class="wrap">
+  <div class="header">
+    <p class="app-name">Tavola</p>
+    <h1>Support</h1>
+    <p class="meta">We're happy to help.</p>
+  </div>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>For any questions, issues, or feedback, reach out by email and we'll get back to you as soon as we can.</p>
+    <div class="contact-card">
+      <p><strong>Email</strong></p>
+      <p><a href="mailto:familyeatsapp@gmail.com">familyeatsapp@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <p class="faq-q">How do I invite my family to join?</p>
+        <p class="faq-a">Go to the Family tab and tap your invite code to share it. Anyone who enters the code in their app will be added to your family group.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I cancel my subscription?</p>
+        <p class="faq-a">Subscriptions are managed through the App Store. Go to Settings → Apple ID → Subscriptions on your iPhone, find Tavola, and tap Cancel Subscription.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I use Tavola without a family?</p>
+        <p class="faq-a">Yes — you can browse and save recipes on your own. Family features like shared meal planning and the shopping list become available once you create or join a family group.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I import a recipe from a website?</p>
+        <p class="faq-a">Tap the + button in your recipe box and choose "Import from URL." Paste the link to any recipe page and Tavola will extract the details automatically. You can also share directly from Safari or Chrome — tap the Share button in your browser and choose Tavola from the share sheet.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">My question isn't listed here.</p>
+        <p class="faq-a">Email us at <a href="mailto:familyeatsapp@gmail.com">familyeatsapp@gmail.com</a> and we'll help you out.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Legal</h2>
+    <p>
+      <a href="https://lucasvantilburg.github.io/tavola-legal/privacy">Privacy Policy</a> ·
+      <a href="https://lucasvantilburg.github.io/tavola-legal/terms">Terms of Use</a>
+    </p>
+  </section>
+</div>
